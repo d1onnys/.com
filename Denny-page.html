@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <title>Система зберігання файлів</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/cloud.png">
+      <style>
+    input[type="text"] {
+      color: black;
+    }
+    input[type="password"] {
+      color: black;
+    }
+    input[type="submit"] {
+      color: black;
+    }
+    
+  </style>
+  </head>
+  <body class="loading">
+
+    <div id="wrapper">
+      <div id="bg"></div>
+      <div id="overlay"></div>
+      <div id="main">
+
+        <!-- Header -->
+          <header id="header">
+             <section>
+      <nav>        
+      <ul>
+        <li><a href="/uploads" class="icon fa-folder"><span class="label"></span>Моя папка</a></li>
+        <li><a href="/" class="icon fa-arrow-left"><span class="label"></span>Назад</a></li>
+
+      </ul>
+    </nav>
+    </section>
+    <section >
+      <h2>Загрузити файл в папку</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Загрузити">
+      </form>
+    </section>
+                     </header>
+
+        <!-- Footer -->
+          <footer id="footer">
+            <span class="copyright">&copy; Номер: <a class="binct-phone-number-1" href="tel:0731230302">+38 (073) 123 03 02</a>.</span>
+          </footer>
+
+      </div>
+    </div>
+    <script>
+      window.onload = function() { document.body.className = ''; }
+      window.ontouchmove = function() { return false; }
+      window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+
+  </body>
+</html>

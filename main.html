@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <title>pri-cloud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Система зберігання файлів</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Папки</h2>
+      <ul>
+        <li><a href="/uploads">Денні</a></li>
+        <li><a href="/Dannya">Даня</a></li>
+        <li><a href="/Archi">Арчі</a></li>
+        <li><a href="/Stas">Стас</a></li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Загрузити файл в папку Денні</h2>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Загрузити">
+      </form>
+    </section>
+    <section>
+      <h2>Загрузити файл в папку Даня</h2>
+      <form action="uploadd.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Загрузити">
+      </form>
+    </section>
+    <section>
+      <h2>Загрузити файл в папку Арчі</h2>
+      <form action="uploada.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Загрузити">
+      </form>
+
+      <h2>Загрузити файл в папку Стас</h2>
+      <form action="uploads.php" method="post" enctype="multipart/form-data">
+        <label for="file">Виберіть файл:</label>
+        <input type="file" name="file" id="file">
+        <input type="submit" name="submit" value="Загрузити">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright &copy;
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </p>
+  </footer>
+</body>
+
+</html>
